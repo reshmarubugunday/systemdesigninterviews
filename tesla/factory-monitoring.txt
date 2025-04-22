@@ -1,0 +1,20 @@
+Tesla's Cell Manufacturing line has thousands of devices that sit on the factory floor to manufacture millions of our in-house designed 4680 battery cells.
+
+
+These machines collectively produce terrabytes of timeseries data every day. Data can be things such as motor RPM, voltage readings, tolerances etc..
+
+This timeseries data can be very important for production to understand the equipment they are responsible for and make decisions such as predective maitenance, trouble shooting, calibration, etc..
+
+Depending on the type of equipment, each equipment will publish the data at a specific frequency.
+
+
+Each instance of an equipment is of 5 different classes. Each class has its own message format.
+
+
+Your job is to design a system that can reliably stream this data off the factory floor so that it can be consumed by customers to make insightful decisions.
+
+
+For every single data point that is ingested by your system, your system must call a REST API called the "Device Service". The Device Service provides useful information that can be added to your data point to enrich it. The enriched data must then be persisted for customer consumption.
+
+
+

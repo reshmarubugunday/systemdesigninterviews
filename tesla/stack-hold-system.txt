@@ -1,0 +1,37 @@
+In cell manufacturing, there are usually 2 units of measure: trays and stacks. There are 64 cells inside a tray, and 8 trays inside a stack.
+ 
+Often times, the cell manufacturing team needs to place “holds” on trays due to certain quality reasons. When you place a hold on a tray, you must provide a reason for why that hold is being placed. A tray can only have a single hold placed on it at one time.
+The business also wants to be able to place holds on stacks as a single operation. This would essentially mean that a hold must be placed on all 8 trays in a stack.
+ 
+The business would like to store information about trays, the stacks those trays are in, and on holds. Particularly, they would like to see a complete history of every single hold a tray has had on it. How would you go about storing all this information in a database?
+ 
+Important queries that may be performed are:
+* Get all the trays with current holds on them
+* Get all the stacks with current holds on them
+* Tell if a tray currently has a hold on it
+* Get me the latest time a particular tray was held
+ 
+What are the database operations you would perform to:
+ 
+* Put a hold on a tray
+* Release a hold on a tray
+* Place a hold on a stack
+* Release a hold on a stack
+
+
+64 cells in a tray
+8 trays in a stack
+When a new hold comes in - old hold ends and new hold starts
+Stack level hold affects all trays within
+Tray level hold affects only that particular tray
+Time of hold start 
+Time of hold end
+Hold message
+
+Hold ID
+Stack ID
+Tray ID
+Hold start Time
+Hold end time
+Hold reason
+Status 
